@@ -9,7 +9,7 @@ def get_random_string():
 
 
 def get_random_fret():
-    return random.randrange(0, 13)
+    return random.randrange(0, 25)
 
 
 def generate_start_num(string_num):
@@ -46,6 +46,9 @@ def generate_question():
 
 def generate_answer(string, fret):
     ordered_notes = generate_string_notes(string)
+    if fret >= 13:
+        fret = fret - 12
+        print(f"aka: {fret}")
     answer = ordered_notes[fret]
     user_input = input("\nYour Guess: ").upper()
     generate_response(answer, user_input)
