@@ -16,13 +16,13 @@ def generate_start_num(string_num):
     if string_num == 1 or string_num == 6:
         start_num = 7
     elif string_num == 2:
-        start_num = 0
-    elif string_num == 3:
-        start_num = 5
-    elif string_num == 4:
-        start_num = 10
-    elif string_num == 5:
         start_num = 2
+    elif string_num == 3:
+        start_num = 10
+    elif string_num == 4:
+        start_num = 5
+    elif string_num == 5:
+        start_num = 0
     return start_num
 
 
